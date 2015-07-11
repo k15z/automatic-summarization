@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Automatic Summarization</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="icon" type="image/png" href="favicon.png" />
+      <link rel="stylesheet" href="css/material.min.css" />
+      <link rel="stylesheet" href="css/material.icon.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+         <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+               <span class="mdl-layout-title">Automatic Summarization</span>
+            </div>
+         </header>
+         <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Menu</span>
+            <nav class="mdl-navigation">
+               <a class="mdl-navigation__link" href="index.html">Demo</a>
+               <a class="mdl-navigation__link" href="textrank.html">TextRank</a>
+               <a class="mdl-navigation__link" href="compactr.html">CompactR</a>
+            </nav>
+         </div>
+         <main class="mdl-layout__content">
+            <div class="page-content mdl-grid">
+               <div class="original-panel mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                  <div class="original-box mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                     <textarea id="original" class="original mdl-textfield__input" type="text" autofocus>The Material Design Lite (MDL) layout component is a comprehensive approach to page layout that uses MDL development tenets, allows for efficient use of MDL components, and automatically adapts to different browsers, screen sizes, and devices.
+
+Appropriate and accessible layout is a critical feature of all user interfaces, regardless of a site's content or function. Page design and presentation is therefore an important factor in the overall user experience. See the layout component's Material Design specifications page for details.
+
+Use of MDL layout principles simplifies the creation of scalable pages by providing reusable components and encourages consistency across environments by establishing recognizable visual elements, adhering to logical structural grids, and maintaining appropriate spacing across multiple platforms and screen sizes. MDL layout is extremely powerful and dynamic, allowing for great consistency in outward appearance and behavior while maintaining development flexibility and ease of use.
+
+ - http://www.getmdl.io/</textarea>
+                     <label class="mdl-textfield__label" for="original">Original Text:</label>
+                  </div>
+                  <div class="summarize-box">
+                     <button id="summarize" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                       Summarize
+                     </button>
+                  </div>
+               </div>
+               <div class="summary-panel mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                  <div class="summary-box mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                     <textarea id="textrank" class="summary mdl-textfield__input" type="text" disabled>&nbsp;</textarea>
+                     <label class="mdl-textfield__label" for="summary">TextRank Algorithm:</label>
+                  </div>
+                  <div class="summary-box mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                     <textarea id="compactr" class="summary mdl-textfield__input" type="text" disabled>&nbsp;</textarea>
+                     <label class="mdl-textfield__label" for="summary">CompactR Algorithm:</label>
+                  </div>
+               </div>
+            </div>
+         </main>
+      </div>
+   </body>
+   <script src="js/material.min.js"></script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/script.js"></script>
+</html>
